@@ -14,7 +14,8 @@ from dotenv import load_dotenv
 from pathlib import Path
 
 import logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - [%(levelname)s] -  %(name)s - '
+                                               '%(funcName)s(%(lineno)d) - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 
 
 class Priority(IntEnum):
